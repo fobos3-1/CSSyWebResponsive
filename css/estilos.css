@@ -1,0 +1,125 @@
+body {
+  background-color: #02010a;
+  font-family: Dancing Script;
+}
+header {
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  top: 0;
+  width: 100%
+}
+nav ul {
+  list-style-type: none;
+  text-align: right;
+}
+nav li {
+  margin-right: 5px;
+  display: inline;
+}
+footer a {
+  color: black;
+}
+header a {
+  color: white;
+}
+img {
+  border: 2px #02010a;
+  box-shadow: 2px 2px #02010a;
+}
+.columnaPie {
+  box-sizing: border-box;
+  padding: 2%;
+  width: 25%
+}
+.columnaPie p {
+  margin: 0px;
+}
+.contenedorimagendoble {
+  box-sizing: border-box;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding: 2%;
+  vertical-align: middle;
+  width: 50%;
+}
+.contenedorimagendoble p {
+  text-align: center;
+  margin: 0px;
+}
+.imagenSVG {
+  height: 16px;
+  width: 16px;
+  box-shadow: none;
+}
+.imagenSVG {
+  height: 16px;
+  width: 16px;
+}
+.imagenSVG * {
+   display: flex;
+   flex-flow: row wrap;
+}
+.miniatura {
+  box-sizing: inherit;
+  width: 100%;
+}
+.numeros {
+  font-size: .85em;
+}
+#contenedorCentral {
+  background-color: #82c3a6;
+}
+#contenedorPie {
+  background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+#contenedorSecundario {
+  background-color: #d5c75f;
+  display: flex;
+}
+#contenido {
+  max-width: 900px;
+  margin: 0 auto;
+}
+#imagenPaisajes {
+  transition-duration: 0.5s;
+}
+#imagenPaisajes:hover {
+  -webkit-transform: rotate(10deg);
+  transition-duration: 0.5s;
+}
+#imagenRetratos {
+  transition-duration: 0.5s;
+}
+#imagenRetratos:hover {
+  box-shadow: 2px #82c3a6;
+  -webkit-transform:translate(20px,-5px);
+  transition-duration: transform: translate 0.5s;
+}
+#imagenPrincipal {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 90%;
+}
+#nombreSitio {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.5em;
+  margin-left: 2%;
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  width: 50%;
+}
+#menu {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 2%;
+  width: 45%;
+}
