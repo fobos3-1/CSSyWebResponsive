@@ -7,22 +7,14 @@ header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   color: white;
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
   top: 0;
   width: 100%
 }
-nav ul {
-  list-style-type: none;
-  text-align: right;
-}
-nav li {
-  margin-right: 5px;
-  display: inline;
-}
 footer a {
   color: black;
-}
-header a {
-  color: white;
 }
 img {
   border: 2px #02010a;
@@ -47,6 +39,23 @@ img {
 .contenedorimagendoble p {
   text-align: center;
   margin: 0px;
+}
+.contenedorimagenTriple {
+  box-sizing: border-box;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding: 2%;
+  vertical-align: middle;
+  width: 33%;
+}
+.blur {
+  -webkit-filter: blur(10px);
+}
+.grayScale {
+  -webkit-filter: grayscale(100%);
+}
+.sepia {
+  -webkit-filter: sepia(90%);
 }
 .imagenSVG {
   height: 16px;
@@ -76,13 +85,16 @@ img {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 #contenedorSecundario {
   background-color: #d5c75f;
   display: flex;
+  flex-wrap: wrap;
 }
 #contenido {
+  animation-name: slidein;
+	animation-duration: 1.5s;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -97,9 +109,12 @@ img {
   transition-duration: 0.5s;
 }
 #imagenRetratos:hover {
-  box-shadow: 2px #82c3a6;
-  -webkit-transform:translate(20px,-5px);
-  transition-duration: transform: translate 0.5s;
+  box-shadow: 2px 2px #82c3a6;
+  -webkit-transform: translate(20px,-5px);
+  transition-duration: 0.5s;
+}
+#imagenRetratos:hover {
+
 }
 #imagenPrincipal {
   margin-left: 5%;
@@ -108,18 +123,74 @@ img {
   margin-bottom: 2%;
   width: 90%;
 }
+#menu {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin-right: 2%;
+  width: 50%;
+}
+#menu a {
+  color: white;
+  margin-bottom: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: auto;
+}
 #nombreSitio {
   box-sizing: border-box;
-  display: inline-block;
   font-size: 1.5em;
+  margin-bottom: auto;
   margin-left: 2%;
+  margin-top: auto;
   text-align: left;
   text-shadow: 2px 2px #02010a;
   width: 50%;
 }
-#menu {
-  box-sizing: border-box;
-  display: inline-block;
-  margin-right: 2%;
-  width: 45%;
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    display: block;
+  }
+  .columnaPie {
+    width: 100%;
+  }
+  .contenedorimagendoble, .contenedorimagenTriple {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+  }
+  #contenedorPie {
+    display: block;
+  }
+  #contenedorSecundario {
+    display: block;
+  }
+  #menu {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 100%
+  }
+  #nombreSitio {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 80%;
+    word-wrap: normal;
+  }
 }
